@@ -13,6 +13,10 @@ body {
   align-items: center;
 }
 .Ball {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
   width: 50px;
   height: 50px;
   border: 5px solid #e97652;
@@ -48,13 +52,15 @@ body {
 }
 
 .container {
+  height: 400px;
+  width: 400px;
   position: relative;
 }
 
 .shadow {
   position: absolute;
   top: 410px;
-  left: -20px;
+  left: 160px;
   background-color: gray;
   width: 80px;
   height: 3px;
@@ -65,6 +71,6 @@ body {
 
 @keyframes gray {
   50% {
-    width: 40px;
+    transform: scale(0.5);
   }
 }
