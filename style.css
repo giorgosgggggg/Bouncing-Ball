@@ -7,7 +7,7 @@
 }
 body {
   height: 100vh;
-  background-color: #fde2e4;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,27 +19,18 @@ body {
   margin: auto;
   width: 50px;
   height: 50px;
-  border: 5px solid #e97652;
-  background-color: #e97652;
+  border: 5px solid white;
+  background-color: white;
   border-radius: 50%;
-  animation: Bounce 0.8s infinite;
+  animation: Bounce 0.8s infinite alternate;
 }
 
 @keyframes Bounce {
-  10% {
+  0% {
     height: 50px;
     width: 50px;
   }
   30% {
-    height: 70px;
-    width: 30px;
-  }
-  50% {
-    height: 70px;
-    width: 30px;
-  }
-
-  75% {
     height: 70px;
     width: 30px;
   }
